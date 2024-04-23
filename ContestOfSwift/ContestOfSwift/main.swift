@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  contest-of-swift
+//  ContestOfSwift
 //
 //  Created by Sergio Daniel on 4/23/24.
 //
