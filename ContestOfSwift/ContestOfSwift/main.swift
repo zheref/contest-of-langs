@@ -7,5 +7,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print("Challenge 1:")
+Challenge1.perform()

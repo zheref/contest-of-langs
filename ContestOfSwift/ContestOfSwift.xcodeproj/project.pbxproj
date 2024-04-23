@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		2BFF639B2BD863BC00035959 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF639A2BD863BC00035959 /* main.swift */; };
 		2BFF63A82BD863E100035959 /* TestsOfSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63A72BD863E100035959 /* TestsOfSwift.swift */; };
+		2BFF63B02BD864C200035959 /* Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63AF2BD864C200035959 /* Challenge1.swift */; };
+		2BFF63B32BD8650400035959 /* Challenge1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63B22BD8650400035959 /* Challenge1Tests.swift */; };
+		2BFF63B62BD874C700035959 /* Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63AF2BD864C200035959 /* Challenge1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BFF63AC2BD8644800035959 /* PBXContainerItemProxy */ = {
+		2BFF63B42BD86B0500035959 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BFF638F2BD863BC00035959 /* Project object */;
 			proxyType = 1;
@@ -38,6 +41,8 @@
 		2BFF639A2BD863BC00035959 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2BFF63A52BD863E100035959 /* TestsOfSwift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsOfSwift.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFF63A72BD863E100035959 /* TestsOfSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsOfSwift.swift; sourceTree = "<group>"; };
+		2BFF63AF2BD864C200035959 /* Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge1.swift; sourceTree = "<group>"; };
+		2BFF63B22BD8650400035959 /* Challenge1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge1Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2BFF639A2BD863BC00035959 /* main.swift */,
+				2BFF63AE2BD8649A00035959 /* Challenges */,
 			);
 			path = ContestOfSwift;
 			sourceTree = "<group>";
@@ -88,8 +94,25 @@
 			isa = PBXGroup;
 			children = (
 				2BFF63A72BD863E100035959 /* TestsOfSwift.swift */,
+				2BFF63B12BD864E200035959 /* Challenges */,
 			);
 			path = TestsOfSwift;
+			sourceTree = "<group>";
+		};
+		2BFF63AE2BD8649A00035959 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF63AF2BD864C200035959 /* Challenge1.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		2BFF63B12BD864E200035959 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF63B22BD8650400035959 /* Challenge1Tests.swift */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +146,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2BFF63AD2BD8644800035959 /* PBXTargetDependency */,
+				2BFF63B52BD86B0500035959 /* PBXTargetDependency */,
 			);
 			name = TestsOfSwift;
 			productName = TestsOfSwift;
@@ -183,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFF639B2BD863BC00035959 /* main.swift in Sources */,
+				2BFF63B02BD864C200035959 /* Challenge1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,17 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFF63B62BD874C700035959 /* Challenge1.swift in Sources */,
 				2BFF63A82BD863E100035959 /* TestsOfSwift.swift in Sources */,
+				2BFF63B32BD8650400035959 /* Challenge1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BFF63AD2BD8644800035959 /* PBXTargetDependency */ = {
+		2BFF63B52BD86B0500035959 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2BFF63962BD863BC00035959 /* ContestOfSwift */;
-			targetProxy = 2BFF63AC2BD8644800035959 /* PBXContainerItemProxy */;
+			targetProxy = 2BFF63B42BD86B0500035959 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -327,8 +353,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -338,8 +366,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
