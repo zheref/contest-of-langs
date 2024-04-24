@@ -10,8 +10,12 @@ import XCTest
 final class Challenge2Tests: XCTestCase {
 
     func testIsWordAnagramOf() {
-        XCTAssertFalse(
-            isWord("amor", anagramOf: "amor")
+
+        XCTAssertTrue(
+            isWord("listen", anagramOf: "silent")
+        )
+        XCTAssertTrue(
+            isWord("triangle", anagramOf: "integral")
         )
         XCTAssertTrue(
             isWord("amor", anagramOf: "roma")
@@ -26,18 +30,23 @@ final class Challenge2Tests: XCTestCase {
             isWord("ballena", anagramOf: "llenaba")
         )
         XCTAssertTrue(
-            isWord("valora", anagramOf: "alvaro")
+            isWord("valora", anagramOf: "Alvaro")
         )
         XCTAssertTrue(
-            isWord("praga", anagramOf: "pagar")
+            isWord("PRAGA", anagramOf: "pagar")
         )
 
-
+        XCTAssertFalse(
+            isWord("amor", anagramOf: "amor")
+        )
         XCTAssertFalse(
             isWord("edwin", anagramOf: "winned")
         )
         XCTAssertFalse(
             isWord("obito", anagramOf: "tobi")
+        )
+        XCTAssertFalse(
+            isWord("sasuke", anagramOf: "itachi")
         )
         XCTAssertFalse(
             isWord("maria", anagramOf: "rima")

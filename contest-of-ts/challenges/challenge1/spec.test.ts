@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { isNumberMultipleOf } from "../challenges/challenge1"
+import { isNumberMultipleOf } from "."
 
 test("Challenge 1: FizzBuzz", () => {
     expect(

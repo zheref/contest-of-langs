@@ -21,5 +21,5 @@ internal func isWord(_ word1: String, anagramOf word2: String) -> Bool {
         return false
     }
 
-    return word1.sorted() == word2.sorted()
+    return word1.lowercased().sorted() == word2.lowercased().sorted()
 }
