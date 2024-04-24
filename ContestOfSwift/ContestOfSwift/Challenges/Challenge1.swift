@@ -22,7 +22,7 @@ public enum Challenge1 {
     private static let multiplesOfFiveReplacement = "buzz"
     private static let multiplesOfThreeAndFiveReplacement = "fizzbuzz"
 
-    public static func fizzBuzz() -> String {
+    internal static func fizzBuzz() -> String {
         var toPrint = ""
 
         for n in 1...100 {
@@ -44,11 +44,11 @@ public enum Challenge1 {
         return toPrint
     }
 
-    static func isNumber(_ number: Int, multipleOf m: Int) -> Bool {
+    internal static func isNumber(_ number: Int, multipleOf m: Int) -> Bool {
         return number % m == 0
     }
 
-    static func perform() {
+    internal static func perform() {
         print(
             fizzBuzz()
         )
