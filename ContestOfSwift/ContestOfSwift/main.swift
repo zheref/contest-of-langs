@@ -7,5 +7,8 @@
 
 import Foundation
 
-print("Challenge 1:")
+print("Challenge 1: Fizz Buzz")
 Challenge1.perform()
+
+print("Challenge 3: Fibonacci Sequence")
+Challenge3.perform()
