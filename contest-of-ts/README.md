@@ -1,6 +1,7 @@
 # contest-of-ts
 
 # To install `bun`:
+Follow: https://bun.sh/docs/installation
 ```bash
 brew install oven-sh/bun/bun
 ```
