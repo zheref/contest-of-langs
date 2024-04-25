@@ -1,5 +1,4 @@
 import 'package:test/test.dart';
-
 import '../../bin/challenges/challenge1.dart';
 
 void main() {

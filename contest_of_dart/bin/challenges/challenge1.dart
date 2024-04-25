@@ -7,8 +7,6 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
-
-
 enum Challenge1 {
   challenge1;
 
@@ -40,6 +38,12 @@ enum Challenge1 {
 
   static bool isNumber({required int $, required int multipleOf}) {
     return $ % multipleOf == 0;
+  }
+
+  static void perform() {
+    print(
+        fizzBuzz()
+    );
   }
 
 }

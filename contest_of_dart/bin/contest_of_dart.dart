@@ -1,5 +1,7 @@
 import 'package:args/args.dart';
 
+import 'challenges/challenge1.dart';
+
 void main(List<String> arguments) {
-  print("Welcome");
+  Challenge1.perform();
 }
