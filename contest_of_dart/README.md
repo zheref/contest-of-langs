@@ -9,5 +9,5 @@ dart bin/contest_of_dart.dart
 ```
 # Test
 ```
-dart test
+dart test --chain-stack-traces
 ```

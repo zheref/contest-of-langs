@@ -12,7 +12,7 @@ function fibonacci(): number[] {
     let sequence = [0, 1]
 
     while (sequence.length < sequenceLimit) {
-        const lastPair = { 
+        const lastPair = {
             first: sequence[sequence.length - 2], 
             second: sequence[sequence.length - 1] 
         }

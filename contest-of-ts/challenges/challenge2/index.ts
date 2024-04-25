@@ -8,14 +8,14 @@
  */
 
 interface IPotentialAnagram {
-    _: string;
+    $: string;
     anagramOf: string;
 }
 
-function isWord({_, anagramOf}: IPotentialAnagram): boolean {
-    if (_ === anagramOf) return false
+function isWord({$, anagramOf}: IPotentialAnagram): boolean {
+    if ($ === anagramOf) return false
 
-    return _.toLowerCase()
+    return $.toLowerCase()
             .split('')
             .sort()
             .join('') 

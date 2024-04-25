@@ -23,12 +23,12 @@ internal enum Challenge3 {
         var sequence = [0, 1]
 
         while sequence.count < limit {
-            let lastPair: (Int, Int) = (
-                sequence[sequence.count - 1],
-                sequence[sequence.count - 2]
+            let lastPair = (
+                first: sequence[sequence.count - 1],
+                second: sequence[sequence.count - 2]
             )
 
-            sequence.append(lastPair.0 + lastPair.1)
+            sequence.append(lastPair.first + lastPair.second)
         }
 
         return sequence

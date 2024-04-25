@@ -3,46 +3,46 @@ import { isWord } from "."
 
 test("is word anagram of another word", () => {
     expect(
-        isWord({_: 'listen', anagramOf: 'silent'})
+        isWord({$: 'listen', anagramOf: 'silent'})
     ).toBe(true)
     expect(
-        isWord({_: 'triangle', anagramOf: 'integral'})
+        isWord({$: 'triangle', anagramOf: 'integral'})
     ).toBe(true)
     expect(
-        isWord({_: 'amor', anagramOf: 'roma'})
+        isWord({$: 'amor', anagramOf: 'roma'})
     ).toBe(true)
     expect(
-        isWord({_: 'sergio', anagramOf: 'riesgo'})
+        isWord({$: 'sergio', anagramOf: 'riesgo'})
     ).toBe(true)
     expect(
-        isWord({_: 'delira', anagramOf: 'lidera'})
+        isWord({$: 'delira', anagramOf: 'lidera'})
     ).toBe(true)
     expect(
-        isWord({_: 'ballena', anagramOf: 'llenaba'})
+        isWord({$: 'ballena', anagramOf: 'llenaba'})
     ).toBe(true)
     expect(
-        isWord({_: 'valora', anagramOf: 'Alvaro'})
+        isWord({$: 'valora', anagramOf: 'Alvaro'})
     ).toBe(true)
     expect(
-        isWord({_: 'PRAGA', anagramOf: 'pagar'})
+        isWord({$: 'PRAGA', anagramOf: 'pagar'})
     ).toBe(true)
 
     expect(
-        isWord({_: 'amor', anagramOf: 'amor'})
+        isWord({$: 'amor', anagramOf: 'amor'})
     ).toBe(false)
     expect(
-        isWord({_: 'edwin', anagramOf: 'winned'})
+        isWord({$: 'edwin', anagramOf: 'winned'})
     ).toBe(false)
     expect(
-        isWord({_: 'obito', anagramOf: 'tobi'})
+        isWord({$: 'obito', anagramOf: 'tobi'})
     ).toBe(false)
     expect(
-        isWord({_: 'sasuke', anagramOf: 'itachi'})
+        isWord({$: 'sasuke', anagramOf: 'itachi'})
     ).toBe(false)
     expect(
-        isWord({_: 'maria', anagramOf: 'rima'})
+        isWord({$: 'maria', anagramOf: 'rima'})
     ).toBe(false)
     expect(
-        isWord({_: 'alborota', anagramOf: 'lobo rata'})
+        isWord({$: 'alborota', anagramOf: 'lobo rata'})
     ).toBe(false)
 })
