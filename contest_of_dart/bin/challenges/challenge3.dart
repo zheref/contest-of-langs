@@ -25,4 +25,10 @@ abstract class Challenge3 {
     return sequence;
   }
 
+  static void perform() {
+    print(
+      fibonacci().join(", ")
+    );
+  }
+
 }

@@ -12,3 +12,6 @@ Challenge1.perform()
 
 print("Challenge 3: Fibonacci Sequence")
 Challenge3.perform()
+
+print("Challenge 4: Prime Numbers")
+Challenge4.perform()

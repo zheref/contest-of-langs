@@ -7,8 +7,7 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
-enum Challenge1 {
-  challenge1;
+abstract class Challenge1 {
 
   static String multiplesOfThreeReplacement = 'fizz';
   static String multiplesOfFiveReplacement = 'buzz';

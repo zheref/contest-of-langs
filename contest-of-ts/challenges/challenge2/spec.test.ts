@@ -1,7 +1,7 @@
 import { expect, test } from "bun:test"
 import { isWord } from "."
 
-test("is word anagram of another word", () => {
+test("Challenge 2: Is word anagram of another word", () => {
     expect(
         isWord({$: 'listen', anagramOf: 'silent'})
     ).toBe(true)
