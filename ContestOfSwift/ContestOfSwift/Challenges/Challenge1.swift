@@ -16,13 +16,13 @@
 
 import Foundation
 
-public enum Challenge1 {
+enum Challenge1 {
 
     private static let multiplesOfThreeReplacement = "fizz"
     private static let multiplesOfFiveReplacement = "buzz"
     private static let multiplesOfThreeAndFiveReplacement = "fizzbuzz"
 
-    internal static func fizzBuzz() -> String {
+    static func fizzBuzz() -> String {
         var toPrint = ""
 
         for n in 1...100 {
@@ -44,11 +44,11 @@ public enum Challenge1 {
         return toPrint
     }
 
-    internal static func isNumber(_ number: Int, multipleOf m: Int) -> Bool {
+    static func isNumber(_ number: Int, multipleOf m: Int) -> Bool {
         return number % m == 0
     }
 
-    internal static func perform() {
+    static func perform() {
         print(
             fizzBuzz()
         )

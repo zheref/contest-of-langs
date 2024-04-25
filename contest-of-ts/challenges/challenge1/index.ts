@@ -11,7 +11,7 @@ const multiplesOfThreeReplacement = 'fizz'
 const multiplesOfFiveReplacement = 'buzz'
 const multiplesOfThreeAndFiveReplacement = 'fizzbuzz'
 
-function fizzBuzz() {
+function fizzBuzz(): string {
     let toPrint = ''
 
     for (let i = 1; i <= 100; i++) {
@@ -33,7 +33,7 @@ function fizzBuzz() {
     return toPrint
 }
 
-function isNumberMultipleOf(number: number, multiple: number) {
+function isNumberMultipleOf(number: number, multiple: number): boolean {
     return number % multiple === 0
 }
 
