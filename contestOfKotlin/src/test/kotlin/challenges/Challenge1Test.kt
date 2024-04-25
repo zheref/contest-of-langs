@@ -1,7 +1,6 @@
 package challenges.challenge1
 
 import org.example.challenges.challenge1.*
-import kotlin.test.Test
 import kotlin.test.*
 
 class Challenge1TestCase {

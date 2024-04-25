@@ -15,11 +15,11 @@
 
 import Foundation
 
-internal enum Challenge3 {
+enum Challenge3 {
 
     private static let limit = 50
 
-    internal static func fibonacci() -> [Int] {
+    static func fibonacci() -> [Int] {
         var sequence = [0, 1]
 
         while sequence.count < limit {
@@ -34,7 +34,7 @@ internal enum Challenge3 {
         return sequence
     }
 
-    internal static func perform() {
+    static func perform() {
         print(
             fibonacci()
                 .map { "\($0)" }

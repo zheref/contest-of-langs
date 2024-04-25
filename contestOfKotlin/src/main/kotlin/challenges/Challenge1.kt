@@ -16,6 +16,10 @@ fun fizzBuzz(): String {
     var toPrint = ""
 
     for (n in 1..100) {
+        if (n > 1) {
+            toPrint += "\n"
+        }
+
         toPrint += when {
             isNumber(n, multipleOf = 3) && isNumber(n, multipleOf = 5) -> MULTIPLES_OF_THREE_AND_FIVE_REPLACEMENT
             isNumber(n, multipleOf = 3) -> MULTIPLES_OF_THREE_REPLACEMENT
