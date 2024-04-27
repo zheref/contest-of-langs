@@ -30,7 +30,7 @@ import Foundation
 enum Challenge5 {
 
     protocol Polygon {
-        var area: Double { get }
+        func getArea() -> Double
         var isEquilateral: Bool { get }
     }
 
@@ -39,7 +39,7 @@ enum Challenge5 {
         let height: Double
         var firstAngle: Double = 60
 
-        var area: Double {
+        func getArea() -> Double {
             (base * height) / 2
         }
 
@@ -58,6 +58,7 @@ enum Challenge5 {
 
     struct Rectangle: Polygon {
         let length: Double
+        
         let width: Double
 
         init(length: Double, width: Double) {
@@ -70,12 +71,12 @@ enum Challenge5 {
             self.width = length
         }
 
-        var area: Double {
-            length * width
+        func getArea() -> Double {
+            return length * width
         }
 
         var isEquilateral: Bool {
-            return length == width
+            length == width
         }
 
         var isSquare: Bool { isEquilateral }

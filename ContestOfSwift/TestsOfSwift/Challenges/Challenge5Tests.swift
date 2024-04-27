@@ -13,7 +13,7 @@ final class Challenge5Tests: XCTestCase {
     func testTriangle() {
         let triangle1 = Challenge5.Triangle(base: 20, height: 20)
         XCTAssertEqual(
-            triangle1.area,
+            triangle1.getArea(),
             200
         )
         XCTAssertTrue(triangle1.isEquilateral)
@@ -22,7 +22,7 @@ final class Challenge5Tests: XCTestCase {
 
         let triangle2 = Challenge5.Triangle(base: 30, height: 30, firstAngle: 90)
         XCTAssertEqual(
-            triangle2.area,
+            triangle2.getArea(),
             450
         )
         XCTAssertTrue(triangle2.isRectangular)
@@ -31,7 +31,7 @@ final class Challenge5Tests: XCTestCase {
 
         let triangle3 = Challenge5.Triangle(base: 30, height: 20, firstAngle: 30)
         XCTAssertEqual(
-            triangle3.area,
+            triangle3.getArea(),
             300
         )
         XCTAssertFalse(triangle3.isRectangular)
@@ -42,7 +42,7 @@ final class Challenge5Tests: XCTestCase {
     func testRectangle() {
         let rectangle1 = Challenge5.Rectangle(length: 30, width: 20)
         XCTAssertEqual(
-            rectangle1.area,
+            rectangle1.getArea(),
             600
         )
         XCTAssertFalse(rectangle1.isEquilateral)
@@ -50,7 +50,7 @@ final class Challenge5Tests: XCTestCase {
 
         let rectangle2 = Challenge5.Rectangle(length: 30)
         XCTAssertEqual(
-            rectangle2.area,
+            rectangle2.getArea(),
             900
         )
         XCTAssertTrue(rectangle2.isEquilateral)
