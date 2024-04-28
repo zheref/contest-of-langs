@@ -1,0 +1,15 @@
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/bin/Debug/net7.0/ContestOfSharp
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/bin/Debug/net7.0/ContestOfSharp.deps.json
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/bin/Debug/net7.0/ContestOfSharp.runtimeconfig.json
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/bin/Debug/net7.0/ContestOfSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/bin/Debug/net7.0/ContestOfSharp.pdb
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.csproj.AssemblyReference.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.AssemblyInfoInputs.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.AssemblyInfo.cs
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.csproj.CoreCompileInputs.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/refint/ContestOfSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.pdb
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ContestOfSharp.genruntimeconfig.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/obj/Debug/net7.0/ref/ContestOfSharp.dll
