@@ -9,7 +9,7 @@
 
 namespace ContestOfSharp.Challenges;
  
-public class Challenge2
+public abstract class Challenge2
 {
     public static bool IsWord(string word, string anagramOf)
     {

@@ -7,3 +7,6 @@ Challenge1.Perform();
 
 Console.WriteLine("Challenge 3: Fibonacci");
 Challenge3.Perform();
+
+Console.WriteLine("Challenge 4: Prime Numbers");
+Challenge4.Perform();
