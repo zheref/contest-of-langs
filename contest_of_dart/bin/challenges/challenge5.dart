@@ -32,7 +32,7 @@ class Triangle implements Polygon {
 
   @override
   double getArea() {
-    return (base * height) / 20;
+    return (base * height) / 2;
   }
 
   @override
@@ -47,3 +47,20 @@ class Triangle implements Polygon {
   }
 }
 
+class Rectangle implements Polygon {
+  double length;
+  double width;
+
+  Rectangle(this.length, this.width);
+  Rectangle.square(this.length) : width = length;
+
+  @override
+  double getArea() {
+    return length * width;
+  }
+
+  @override
+  bool get isEquilateral => length == width;
+
+  bool get isSquare => isEquilateral;
+}
