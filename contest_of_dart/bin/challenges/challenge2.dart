@@ -12,11 +12,10 @@ bool isWord({required String $, required String anagramOf}) {
     return false;
   }
 
-  List<int> $characters = $.toLowerCase()
-                           .split('')
-                           .map((e) => e.codeUnitAt(0))
-                           .toList();
-  List<int> anagramOfCharacters = anagramOf.toLowerCase().split('').map((e) => e.codeUnitAt(0)).toList();
+  var $characters =
+      $.toLowerCase().split('').map((e) => e.codeUnitAt(0)).toList();
+  var anagramOfCharacters =
+      anagramOf.toLowerCase().split('').map((e) => e.codeUnitAt(0)).toList();
 
   $characters.sort();
   anagramOfCharacters.sort();

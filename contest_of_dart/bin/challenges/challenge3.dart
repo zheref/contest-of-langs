@@ -7,13 +7,13 @@
  */
 
 abstract class Challenge3 {
-
   static const sequenceLimit = 50;
 
   static List<int> fibonacci() {
     var sequence = [0, 1];
 
     while (sequence.length < sequenceLimit) {
+      // Record
       final lastPair = (
         first: sequence[sequence.length - 1],
         second: sequence.elementAt(sequence.length - 2)
@@ -26,9 +26,6 @@ abstract class Challenge3 {
   }
 
   static void perform() {
-    print(
-      fibonacci().join(", ")
-    );
+    print(fibonacci().join(", "));
   }
-
 }
