@@ -30,8 +30,8 @@ fun fizzBuzz(): String {
 
     return toPrint
 }
-fun isNumber(n: Int, multipleOf: Int): Boolean {
-    return n % multipleOf == 0
+fun isNumber(number: Int, multipleOf: Int): Boolean {
+    return number % multipleOf == 0
 }
 
 fun performFizzBuzz() {
