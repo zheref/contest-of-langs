@@ -8,13 +8,12 @@
  */
 
 abstract class Challenge1 {
-
-  static String multiplesOfThreeReplacement = 'fizz';
-  static String multiplesOfFiveReplacement = 'buzz';
-  static String multiplesOfThreeAndFiveReplacement = 'fizzbuzz';
+  static final String multiplesOfThreeReplacement = 'fizz';
+  static final String multiplesOfFiveReplacement = 'buzz';
+  static final String multiplesOfThreeAndFiveReplacement = 'fizzbuzz';
 
   static String fizzBuzz() {
-    String toPrint = "";
+    var toPrint = "";
 
     for (int n = 0; n <= 100; n++) {
       if (n > 0) {
@@ -35,14 +34,11 @@ abstract class Challenge1 {
     return toPrint;
   }
 
-  static bool isNumber({required int $, required int multipleOf}) {
-    return $ % multipleOf == 0;
-  }
-
   static void perform() {
-    print(
-        fizzBuzz()
-    );
+    print(fizzBuzz());
   }
+}
 
+bool isNumber({required int $, required int multipleOf}) {
+  return $ % multipleOf == 0;
 }
