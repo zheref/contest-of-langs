@@ -9,7 +9,7 @@
 
 using static System.Linq.Enumerable;
 
-namespace ContestOfSharp.Source;
+namespace ContestOfSharp.Challenges;
 
 public abstract class Challenge1
 {
@@ -20,8 +20,7 @@ public abstract class Challenge1
     private static string FizzBuzz()
     {
         var toPrint = "";
-
-        // Iterate numbers from 1 to 11 using a Range operator
+        
         foreach (var n in Range(1, 100))
         {
             if (n > 1) toPrint += "\n";

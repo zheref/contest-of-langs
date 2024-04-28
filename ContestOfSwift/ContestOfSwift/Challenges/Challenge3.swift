@@ -15,6 +15,7 @@
 
 import Foundation
 
+// Virtual namespacing
 enum Challenge3 {
 
     private static let limit = 50
@@ -23,6 +24,7 @@ enum Challenge3 {
         var sequence = [0, 1]
 
         while sequence.count < limit {
+            // Tuple
             let lastPair = (
                 first: sequence[sequence.count - 1],
                 second: sequence[sequence.count - 2]

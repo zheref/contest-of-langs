@@ -14,6 +14,7 @@ fun fibonacci(): List<Long> {
     val sequence: MutableList<Long> = mutableListOf(0, 1)
 
     while (sequence.size < SEQUENCE_LIMIT) {
+        // Object
         val lastPair = object {
             val first = sequence[sequence.size - 1]
             val second = sequence[sequence.size - 2]

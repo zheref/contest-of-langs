@@ -1,5 +1,5 @@
-namespace TestOfSharp;
-using static ContestOfSharp.Source.Challenge1;
+namespace TestOfSharp.Challenges;
+using static ContestOfSharp.Challenges.Challenge1;
 
 [TestClass]
 public class Challenge1Tests
