@@ -19,11 +19,11 @@ function fizzBuzz(): string {
             toPrint += '\n'
         }
 
-        if (isNumberMultipleOf(i, 3) && isNumberMultipleOf(i, 5)) {
+        if (isNumber({$: i, multipleOf: 3}) && isNumber({$: i, multipleOf: 5})) {
             toPrint += multiplesOfThreeAndFiveReplacement
-        } else if (isNumberMultipleOf(i, 3)) {
+        } else if (isNumber({$: i, multipleOf: 3})) {
             toPrint += multiplesOfThreeReplacement
-        } else if (isNumberMultipleOf(i, 5)) {
+        } else if (isNumber({$: i, multipleOf: 5})) {
             toPrint += multiplesOfFiveReplacement
         } else {
             toPrint += i
@@ -33,12 +33,14 @@ function fizzBuzz(): string {
     return toPrint
 }
 
-function isNumberMultipleOf(number: number, multiple: number): boolean {
-    return number % multiple === 0
+interface MultipleOfEvaluation { $: number; multipleOf: number }
+
+function isNumber({$, multipleOf}: MultipleOfEvaluation): boolean {
+    return $ % multipleOf === 0
 }
 
 function performFizzBuzz() {
     console.log(fizzBuzz())
 }
 
-export { fizzBuzz, performFizzBuzz, isNumberMultipleOf }
+export { fizzBuzz, performFizzBuzz, isNumber }

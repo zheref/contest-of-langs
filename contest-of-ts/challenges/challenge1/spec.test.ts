@@ -1,54 +1,54 @@
 import { expect, test } from "bun:test"
-import { isNumberMultipleOf } from "."
+import { isNumber } from "."
 
 test("Challenge 1: FizzBuzz", () => {
     expect(
-        isNumberMultipleOf(1, 1)
+        isNumber({$: 1, multipleOf: 1})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(2, 2)
+        isNumber({$: 2, multipleOf: 2})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(6, 2)
+        isNumber({$: 6, multipleOf: 2})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(20, 5)
+        isNumber({$: 20, multipleOf: 5})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(15, 5)
+        isNumber({$: 15, multipleOf: 5})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(21, 7)
+        isNumber({$: 21, multipleOf: 7})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(72, 4)
+        isNumber({$: 72, multipleOf: 4})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(81, 9)
+        isNumber({$: 81, multipleOf: 9})
     ).toBe(true)
     expect(
-        isNumberMultipleOf(90, 10)
+        isNumber({$: 90, multipleOf: 10})
     ).toBe(true)
 
     expect(
-        isNumberMultipleOf(3, 2)
+        isNumber({$: 3, multipleOf: 2})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(5, 2)
+        isNumber({$: 5, multipleOf: 2})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(7, 2)
+        isNumber({$: 7, multipleOf: 2})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(21, 5)
+        isNumber({$: 21, multipleOf: 5})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(72, 5)
+        isNumber({$: 72, multipleOf: 5})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(81, 2)
+        isNumber({$: 81, multipleOf: 2})
     ).toBe(false)
     expect(
-        isNumberMultipleOf(90, 8)
+        isNumber({$: 90, multipleOf: 8})
     ).toBe(false)
 })
