@@ -18,13 +18,13 @@ public abstract class Challenge5
 {
     private static readonly double Tolerance = 0.001;
     
-    interface Polygon
+    interface IPolygon
     {
         double GetArea();
         bool IsEquilateral { get; }
     }
 
-    public record struct Triangle : Polygon
+    public record struct Triangle : IPolygon
     {
         private readonly double _firstAngle;
         
@@ -52,7 +52,7 @@ public abstract class Challenge5
         public bool IsIsosceles => Math.Abs(_firstAngle - 60.0) < Tolerance;
     }
 
-    public struct Rectangle : Polygon
+    public struct Rectangle : IPolygon
     {
         private double Length { get; set; }
         private double Width { get; set; }
