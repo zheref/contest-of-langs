@@ -28,6 +28,18 @@
 		2BFF63CE2BDF188700035959 /* Challenge6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63CD2BDF188700035959 /* Challenge6Tests.swift */; };
 		2BFF63CF2BDF188B00035959 /* Challenge6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63CB2BDF17FD00035959 /* Challenge6.swift */; };
 		2BFF63D22BDF1BD200035959 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFF63D12BDF1BD200035959 /* AppKit.framework */; };
+		2BFF63D42BE039D500035959 /* Challenge7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63D32BE039D500035959 /* Challenge7.swift */; };
+		2BFF63D62BE03C5D00035959 /* Challenge7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63D52BE03C5D00035959 /* Challenge7Tests.swift */; };
+		2BFF63D72BE03C5F00035959 /* Challenge7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63D32BE039D500035959 /* Challenge7.swift */; };
+		2BFF63D92BE03DE600035959 /* Challenge8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63D82BE03DE600035959 /* Challenge8.swift */; };
+		2BFF63DB2BE03E3C00035959 /* Challenge8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63DA2BE03E3C00035959 /* Challenge8Tests.swift */; };
+		2BFF63DC2BE0476A00035959 /* Challenge8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63D82BE03DE600035959 /* Challenge8.swift */; };
+		2BFF63DE2BE04AAF00035959 /* Challenge9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63DD2BE04AAF00035959 /* Challenge9.swift */; };
+		2BFF63E02BE04D8400035959 /* Challenge9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63DF2BE04D8400035959 /* Challenge9Tests.swift */; };
+		2BFF63E12BE04DA200035959 /* Challenge9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63DD2BE04AAF00035959 /* Challenge9.swift */; };
+		2BFF63E32BE0576500035959 /* Challenge10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63E22BE0576500035959 /* Challenge10.swift */; };
+		2BFF63E52BE05D6900035959 /* Challenge10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63E42BE05D6900035959 /* Challenge10Tests.swift */; };
+		2BFF63E62BE0620400035959 /* Challenge10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF63E22BE0576500035959 /* Challenge10.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +82,14 @@
 		2BFF63CB2BDF17FD00035959 /* Challenge6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge6.swift; sourceTree = "<group>"; };
 		2BFF63CD2BDF188700035959 /* Challenge6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge6Tests.swift; sourceTree = "<group>"; };
 		2BFF63D12BDF1BD200035959 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2BFF63D32BE039D500035959 /* Challenge7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge7.swift; sourceTree = "<group>"; };
+		2BFF63D52BE03C5D00035959 /* Challenge7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge7Tests.swift; sourceTree = "<group>"; };
+		2BFF63D82BE03DE600035959 /* Challenge8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge8.swift; sourceTree = "<group>"; };
+		2BFF63DA2BE03E3C00035959 /* Challenge8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge8Tests.swift; sourceTree = "<group>"; };
+		2BFF63DD2BE04AAF00035959 /* Challenge9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge9.swift; sourceTree = "<group>"; };
+		2BFF63DF2BE04D8400035959 /* Challenge9Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge9Tests.swift; sourceTree = "<group>"; };
+		2BFF63E22BE0576500035959 /* Challenge10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge10.swift; sourceTree = "<group>"; };
+		2BFF63E42BE05D6900035959 /* Challenge10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge10Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +157,10 @@
 				2BFF63C12BD9FAB400035959 /* Challenge4.swift */,
 				2BFF63C62BDC833900035959 /* Challenge5.swift */,
 				2BFF63CB2BDF17FD00035959 /* Challenge6.swift */,
+				2BFF63D32BE039D500035959 /* Challenge7.swift */,
+				2BFF63D82BE03DE600035959 /* Challenge8.swift */,
+				2BFF63DD2BE04AAF00035959 /* Challenge9.swift */,
+				2BFF63E22BE0576500035959 /* Challenge10.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -150,6 +174,10 @@
 				2BFF63C32BD9FAFB00035959 /* Challenge4Tests.swift */,
 				2BFF63C82BDC850F00035959 /* Challenge5Tests.swift */,
 				2BFF63CD2BDF188700035959 /* Challenge6Tests.swift */,
+				2BFF63D52BE03C5D00035959 /* Challenge7Tests.swift */,
+				2BFF63DA2BE03E3C00035959 /* Challenge8Tests.swift */,
+				2BFF63DF2BE04D8400035959 /* Challenge9Tests.swift */,
+				2BFF63E42BE05D6900035959 /* Challenge10Tests.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -255,8 +283,12 @@
 				2BFF63B82BD8896D00035959 /* Challenge2.swift in Sources */,
 				2BFF63CC2BDF17FD00035959 /* Challenge6.swift in Sources */,
 				2BFF63BD2BD9586100035959 /* Challenge3.swift in Sources */,
+				2BFF63DE2BE04AAF00035959 /* Challenge9.swift in Sources */,
 				2BFF639B2BD863BC00035959 /* main.swift in Sources */,
+				2BFF63E32BE0576500035959 /* Challenge10.swift in Sources */,
 				2BFF63C72BDC833900035959 /* Challenge5.swift in Sources */,
+				2BFF63D42BE039D500035959 /* Challenge7.swift in Sources */,
+				2BFF63D92BE03DE600035959 /* Challenge8.swift in Sources */,
 				2BFF63C22BD9FAB400035959 /* Challenge4.swift in Sources */,
 				2BFF63B02BD864C200035959 /* Challenge1.swift in Sources */,
 			);
@@ -269,15 +301,23 @@
 				2BFF63CE2BDF188700035959 /* Challenge6Tests.swift in Sources */,
 				2BFF63BA2BD8898300035959 /* Challenge2Tests.swift in Sources */,
 				2BFF63BF2BD958AD00035959 /* Challenge3Tests.swift in Sources */,
+				2BFF63E02BE04D8400035959 /* Challenge9Tests.swift in Sources */,
+				2BFF63D72BE03C5F00035959 /* Challenge7.swift in Sources */,
 				2BFF63C42BD9FAFB00035959 /* Challenge4Tests.swift in Sources */,
 				2BFF63B62BD874C700035959 /* Challenge1.swift in Sources */,
+				2BFF63D62BE03C5D00035959 /* Challenge7Tests.swift in Sources */,
+				2BFF63E52BE05D6900035959 /* Challenge10Tests.swift in Sources */,
 				2BFF63CA2BDC854700035959 /* Challenge5.swift in Sources */,
+				2BFF63DC2BE0476A00035959 /* Challenge8.swift in Sources */,
 				2BFF63C02BD958B600035959 /* Challenge3.swift in Sources */,
 				2BFF63CF2BDF188B00035959 /* Challenge6.swift in Sources */,
 				2BFF63A82BD863E100035959 /* TestsOfSwift.swift in Sources */,
+				2BFF63E62BE0620400035959 /* Challenge10.swift in Sources */,
 				2BFF63C52BD9FB0200035959 /* Challenge4.swift in Sources */,
+				2BFF63E12BE04DA200035959 /* Challenge9.swift in Sources */,
 				2BFF63BB2BD8898D00035959 /* Challenge2.swift in Sources */,
 				2BFF63B32BD8650400035959 /* Challenge1Tests.swift in Sources */,
+				2BFF63DB2BE03E3C00035959 /* Challenge8Tests.swift in Sources */,
 				2BFF63C92BDC850F00035959 /* Challenge5Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
