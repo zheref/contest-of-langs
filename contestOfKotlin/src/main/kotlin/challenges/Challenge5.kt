@@ -1,5 +1,14 @@
 package org.example.challenges
 
+/*
+ * Reto #4
+ * ÁREA DE UN POLÍGONO
+ * Fecha publicación enunciado: 24/01/22
+ * Fecha publicación resolución: 31/01/22
+ * Dificultad: FÁCIL
+ *
+ */
+
 interface Challenge5 {
 
     interface Polygon {

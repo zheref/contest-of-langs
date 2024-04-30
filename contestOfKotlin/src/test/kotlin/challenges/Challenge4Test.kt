@@ -3,7 +3,7 @@ package challenges.challenge4
 import org.example.challenges.challenge4.*
 import kotlin.test.*
 
-class Challange4TestCase {
+class Challange4Test {
     @Test fun testIsPrime() {
         assertTrue(isPrime(2))
         assertTrue(isPrime(3))

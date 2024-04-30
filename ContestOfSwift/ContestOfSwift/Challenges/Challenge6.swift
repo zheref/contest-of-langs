@@ -16,13 +16,17 @@
 
 import AppKit
 
+enum CustomError6: Error {
+    case notAnImage
+}
+
 func downloadImage(fromURL url: URL) async throws -> NSImage? {
     let (data, _) = try await URLSession.shared.data(from: url)
     return NSImage(data: data)
 }
 
 func calculateAspectRatio(fromURL url: URL) async throws -> (w: Int, h: Int)? {
-    guard let image = try await downloadImage(fromURL: url) else { return nil }
+    guard let image = try await downloadImage(fromURL: url) else { throw CustomError6.notAnImage }
     let intSize = (width: Int(image.size.width), height: Int(image.size.height))
     let gcd = greatestCommonDivisor(from: intSize.width, and: intSize.height)
     return (intSize.width / gcd, intSize.height / gcd)
