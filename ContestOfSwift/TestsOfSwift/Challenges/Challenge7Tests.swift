@@ -10,6 +10,10 @@ import XCTest
 final class Challenge7Tests: XCTestCase {
 
     func testInvert() {
+        XCTAssertEqual(Challenge7.invert(string: "Hello"), "olleH")
+        XCTAssertEqual(Challenge7.invert(string: "Hello World"), "dlroW olleH")
+        XCTAssertEqual(Challenge7.invert(string: "T"), "T")
+        XCTAssertEqual(Challenge7.invert(string: ""), "")
         XCTAssertEqual(Challenge7.invert(string: "Hola mundo"), "odnum aloH")
         XCTAssertEqual(Challenge7.invert(string: "Exotic"), "citoxE")
         XCTAssertEqual(Challenge7.invert(string: "Galaxy"), "yxalaG")
