@@ -9,10 +9,6 @@ import XCTest
 
 final class Challenge8Tests: XCTestCase {
 
-    func testCountWords() {
-        
-    }
-
     func testCountInstances_withMultipleOccurrences() {
         let words = ["apple", "banana", "Apple", "orange", "aPPle"]
         let count = Challenge8.countInstances(of: "apple", in: words)
