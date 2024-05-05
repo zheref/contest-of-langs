@@ -23,4 +23,28 @@ public class StringExtensionsTests
         Assert.IsFalse("maria".IsAnagramOf(word: "rima"));
         Assert.IsFalse("alborota".IsAnagramOf(word: "lobo rata"));
     }
+
+    [TestMethod]
+    public void Test_IsEmpty()
+    {
+        Assert.IsFalse("something".IsEmpty());
+        Assert.IsTrue("".IsEmpty());
+        Assert.IsTrue(" ".IsEmpty());
+        Assert.IsFalse(" s ".IsEmpty());
+    }
+
+    [TestMethod]
+    public void Test_Inverted()
+    {
+        Assert.AreEqual(expected: "olleH", actual: "Hello".Inverted());
+        Assert.AreEqual(expected: "dlroW olleH", actual: "Hello World".Inverted());
+        Assert.AreEqual(expected: "T", actual: "T".Inverted());
+        Assert.AreEqual(expected: "", actual: "".Inverted());
+        Assert.AreEqual(expected: "odnum aloH", actual: "Hola mundo".Inverted());
+        Assert.AreEqual(expected: "citoxE", actual: "Exotic".Inverted());
+        Assert.AreEqual(expected: "yxalaG", actual: "Galaxy".Inverted());
+        Assert.AreEqual(expected: "faelonaN", actual: "Nanoleaf".Inverted());
+        Assert.AreEqual(expected: "kayak", actual: "kayak".Inverted());
+        Assert.AreEqual(expected: "deified", actual: "deified".Inverted());
+    }
 }
