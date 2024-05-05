@@ -102,3 +102,12 @@
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.pdb
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.genruntimeconfig.cache
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/ref/TestOfSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/Microsoft.Maui.Graphics.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/Microsoft.Maui.Graphics.Skia.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/SkiaSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/runtimes/osx/native/libSkiaSharp.dylib
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/runtimes/win-arm64/native/libSkiaSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/runtimes/win-x64/native/libSkiaSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/runtimes/win-x86/native/libSkiaSharp.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/Microsoft.Reactive.Testing.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/System.Reactive.dll

@@ -28,6 +28,29 @@
           }
         }
       },
+      "Microsoft.Maui.Graphics/9.0.0-preview.3.10457": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Maui.Graphics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.0.6"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics.Skia/9.0.0-preview.3.10457": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "9.0.0-preview.3.10457",
+          "SkiaSharp": "2.88.6"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Maui.Graphics.Skia.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.0.6"
+          }
+        }
+      },
       "Microsoft.NET.Test.Sdk/17.5.0": {
         "dependencies": {
           "Microsoft.CodeCoverage": "17.5.0",
@@ -36,6 +59,17 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Reactive.Testing/6.0.1-preview.1": {
+        "dependencies": {
+          "System.Reactive": "6.0.1-preview.1"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Reactive.Testing.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.0"
+          }
+        }
+      },
       "Microsoft.TestPlatform.ObjectModel/17.5.0": {
         "dependencies": {
           "NuGet.Frameworks": "5.11.0",
@@ -319,6 +353,46 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+      "SkiaSharp/2.88.6": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.6",
+          "SkiaSharp.NativeAssets.macOS": "2.88.6"
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.6.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.6": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.6": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -370,6 +444,15 @@
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Reactive/6.0.1-preview.1": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.0"
+          }
         }
       },
       "System.Reflection/4.3.0": {
@@ -432,6 +515,12 @@
         }
       },
       "ContestOfSharp/1.0.0": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "9.0.0-preview.3.10457",
+          "Microsoft.Maui.Graphics.Skia": "9.0.0-preview.3.10457",
+          "Microsoft.Reactive.Testing": "6.0.1-preview.1",
+          "System.Reactive": "6.0.1-preview.1"
+        },
         "runtime": {
           "ContestOfSharp.dll": {}
         }
@@ -466,6 +555,20 @@
       "path": "microsoft.codecoverage/17.5.0",
       "hashPath": "microsoft.codecoverage.17.5.0.nupkg.sha512"
     },
+    "Microsoft.Maui.Graphics/9.0.0-preview.3.10457": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vdE4KTxJfTpjTx7lZ8lT+rvHjXaidEm6UCILnft+2nFmQ8fTeRMp6yvZhDDtxfY5Bm0unJygAZxED9i6qnjD0A==",
+      "path": "microsoft.maui.graphics/9.0.0-preview.3.10457",
+      "hashPath": "microsoft.maui.graphics.9.0.0-preview.3.10457.nupkg.sha512"
+    },
+    "Microsoft.Maui.Graphics.Skia/9.0.0-preview.3.10457": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fbkg9K90CVD5ffF46XHOvfANSrpbkslXsUhRXXQxClQCinFtajrDxMfNwpFtnT4mrKii2XnDAtCs7qsCt9WkWA==",
+      "path": "microsoft.maui.graphics.skia/9.0.0-preview.3.10457",
+      "hashPath": "microsoft.maui.graphics.skia.9.0.0-preview.3.10457.nupkg.sha512"
+    },
     "Microsoft.NET.Test.Sdk/17.5.0": {
       "type": "package",
       "serviceable": true,
@@ -486,6 +589,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Reactive.Testing/6.0.1-preview.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZOA1IsG2se0qpTtDKAjusiAbHOFZahCqvu+PbQ7F2a/L9kH0NtQn7zfQcCTbx1m5SxqcXuOzc4J2VfjMGGmO+w==",
+      "path": "microsoft.reactive.testing/6.0.1-preview.1",
+      "hashPath": "microsoft.reactive.testing.6.0.1-preview.1.nupkg.sha512"
     },
     "Microsoft.TestPlatform.ObjectModel/17.5.0": {
       "type": "package",
@@ -536,6 +646,27 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
+    "SkiaSharp/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
+      "path": "skiasharp/2.88.6",
+      "hashPath": "skiasharp.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sko9LFxRXSjb3OGh5/RxrVRXxYo48tr5NKuuSy6jB85GrYt8WRqVY1iLOLwtjPiVAt4cp+pyD4i30azanS64dw==",
+      "path": "skiasharp.nativeassets.macos/2.88.6",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TzFO0u/g2MpQsTty4fyCDdMcfcWI+aLswwfnYXr3gtNS6VLKdMXPMeKpJa3pJSLnUBN6wD0JjuCe8OoLBQ6cQ==",
+      "path": "skiasharp.nativeassets.win32/2.88.6",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.6.nupkg.sha512"
+    },
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -577,6 +708,20 @@
       "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "path": "system.io/4.3.0",
       "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Reactive/6.0.1-preview.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3+0YK2nGSOs8VNL56B6YzCE70RO1f8QdmVu7/w3ifnY++SBihgKaM7QWYDgAL8TPTltNhU2Mtxc/5gLwGh1KyA==",
+      "path": "system.reactive/6.0.1-preview.1",
+      "hashPath": "system.reactive.6.0.1-preview.1.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",
