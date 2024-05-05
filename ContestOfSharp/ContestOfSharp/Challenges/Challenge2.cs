@@ -7,6 +7,8 @@
  * - Dos palabras exactamente iguales no son anagrama.
  */
 
+using ContestOfSharp.South;
+
 namespace ContestOfSharp.Challenges;
  
 public abstract class Challenge2
@@ -15,6 +17,6 @@ public abstract class Challenge2
     {
         if (word == anagramOf) 
             return false;
-        return word.ToLower().OrderBy(c => c).SequenceEqual(anagramOf.ToLower().OrderBy(c => c));
+        return word.IsAnagramOf(word: anagramOf);
     }
 }

@@ -3,20 +3,15 @@
  * Hecho esto, imprime los números primos entre 1 y 100.
  */
 
+using ContestOfSharp.South;
+
 namespace ContestOfSharp.Challenges;
 
 public abstract class Challenge4
 {
     public static bool IsPrime(int number)
     {
-        if (number < 2) return false;
-
-        for (var n = 2; n < number; n++)
-        {
-            if (number % n == 0) return false;
-        }
-
-        return true;
+        return number.IsPrime();
     }
 
     public static void Perform()

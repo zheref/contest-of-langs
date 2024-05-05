@@ -8,6 +8,7 @@
  */
 
 using static System.Linq.Enumerable;
+using ContestOfSharp.South;
 
 namespace ContestOfSharp.Challenges;
 
@@ -25,15 +26,15 @@ public abstract class Challenge1
         {
             if (n > 1) toPrint += "\n";
 
-            if (IsNumber(n, multipleOf: 3) && IsNumber(n, multipleOf: 5))
+            if (n.IsMultipleOf(number: 3) && n.IsMultipleOf(number: 5))
             {
                 toPrint += MultiplesOfThreeAndFiveReplacement;
             }
-            else if (IsNumber(n, multipleOf: 3))
+            else if (n.IsMultipleOf(number: 3))
             {
                 toPrint += MultiplesOfThreeReplacement;
             }
-            else if (IsNumber(n, multipleOf: 5))
+            else if (n.IsMultipleOf(number: 5))
             {
                 toPrint += MultiplesOfFiveReplacement;
             }
@@ -44,11 +45,6 @@ public abstract class Challenge1
         }
 
         return toPrint;
-    }
-
-    public static bool IsNumber(int number, int multipleOf)
-    {
-        return number % multipleOf == 0;
     }
 
     internal static void Perform()

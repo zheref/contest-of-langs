@@ -6,6 +6,7 @@
  *   0, 1, 1, 2, 3, 5, 8, 13...
  */
 
+using ContestOfSharp.South;
 namespace ContestOfSharp.Challenges;
 
 public abstract class Challenge3
@@ -14,21 +15,7 @@ public abstract class Challenge3
 
     public static Int64[] Fibonacci()
     {
-        var sequence = new List<long>() { 0, 1 };
-
-        while (sequence.Count < SequenceLimit)
-        {
-            // Anonymous Type
-            var lastPair = new
-            {
-                first = sequence[sequence.Count - 1],
-                second = sequence[sequence.Count - 2]
-            };
-            
-            sequence.Add(lastPair.first + lastPair.second);
-        }
-
-        return sequence.ToArray();
+        return SequenceLimit.Fibonaccis()!;
     }
 
     public static void Perform()

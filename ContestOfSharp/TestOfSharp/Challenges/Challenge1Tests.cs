@@ -1,5 +1,6 @@
 namespace TestOfSharp.Challenges;
-using static ContestOfSharp.Challenges.Challenge1;
+// using static ContestOfSharp.Challenges.Challenge1;
+using ContestOfSharp.South;
 
 [TestClass]
 public class Challenge1Tests
@@ -7,22 +8,22 @@ public class Challenge1Tests
     [TestMethod]
     public void TestIsNumberMultipleOf()
     {
-        Assert.IsTrue(IsNumber(1, multipleOf: 1));
-        Assert.IsTrue(IsNumber(2, multipleOf: 2));
-        Assert.IsTrue(IsNumber(6, multipleOf: 2));
-        Assert.IsTrue(IsNumber(20, multipleOf: 5));
-        Assert.IsTrue(IsNumber(15, multipleOf: 5));
-        Assert.IsTrue(IsNumber(21, multipleOf: 7));
-        Assert.IsTrue(IsNumber(72, multipleOf: 4));
-        Assert.IsTrue(IsNumber(81, multipleOf: 9));
-        Assert.IsTrue(IsNumber(90, multipleOf: 10));
+        Assert.IsTrue(1.IsMultipleOf(number: 1));
+        Assert.IsTrue(2.IsMultipleOf(number: 2));
+        Assert.IsTrue(6.IsMultipleOf(number: 2));
+        Assert.IsTrue(20.IsMultipleOf(number: 5));
+        Assert.IsTrue(15.IsMultipleOf(number: 5));
+        Assert.IsTrue(21.IsMultipleOf(number: 7));
+        Assert.IsTrue(72.IsMultipleOf(number: 4));
+        Assert.IsTrue(81.IsMultipleOf(number: 9));
+        Assert.IsTrue(90.IsMultipleOf(number: 9));
         
-        Assert.IsFalse(IsNumber(3, multipleOf: 2));
-        Assert.IsFalse(IsNumber(5, multipleOf: 2));
-        Assert.IsFalse(IsNumber(7, multipleOf: 2));
-        Assert.IsFalse(IsNumber(21, multipleOf: 5));
-        Assert.IsFalse(IsNumber(72, multipleOf: 5));
-        Assert.IsFalse(IsNumber(81, multipleOf: 2));
-        Assert.IsFalse(IsNumber(90, multipleOf: 8));
+        Assert.IsFalse(3.IsMultipleOf(number: 2));
+        Assert.IsFalse(5.IsMultipleOf(number: 2));
+        Assert.IsFalse(7.IsMultipleOf(number: 2));
+        Assert.IsFalse(21.IsMultipleOf(number: 5));
+        Assert.IsFalse(72.IsMultipleOf(number: 5));
+        Assert.IsFalse(81.IsMultipleOf(number: 2));
+        Assert.IsFalse(90.IsMultipleOf(number: 8));
     }
 }
