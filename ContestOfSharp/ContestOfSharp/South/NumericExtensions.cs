@@ -1,10 +1,13 @@
+using System.Runtime.InteropServices.ObjectiveC;
+using SkiaSharp;
+
 namespace ContestOfSharp.South;
 
 // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
 
 public static class NumericExtensions
 {
-    public static bool IsMultipleOf(this int self, int number) { return self % number == 0; }
+    public static bool IsMultipleOf(this int self, int number) => self % number == 0;
 
     public static long[]? Fibonaccis(this int self)
     {
@@ -40,4 +43,25 @@ public static class NumericExtensions
 
         return true;
     }
+    
+    public static bool IsEven(this int self) => self % 2 == 0;
+    public static bool IsOdd(this int self) => self % 2 != 0;
+
+    public static int Abs(this int self) => int.Abs(self);
+
+    public static int GreatestCommonDivisor(this int self, int with)
+    {
+        var first = self;
+        var second = with;
+        while (second != 0)
+        {
+            var temp = second;
+            second = first % second;
+            first = temp;
+        }
+
+        return first.Abs();
+    }
+
+    public static TimeSpan Seconds(this int self) => TimeSpan.FromSeconds(self);
 }

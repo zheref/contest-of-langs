@@ -1,4 +1,4 @@
-namespace TestOfSharp.Library;
+namespace TestOfSharp.South;
 using ContestOfSharp.South;
 
 [TestClass]

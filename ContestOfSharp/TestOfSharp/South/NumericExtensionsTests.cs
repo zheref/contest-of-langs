@@ -1,4 +1,4 @@
-namespace TestOfSharp.Library;
+namespace TestOfSharp.South;
 using ContestOfSharp.South;
 
 [TestClass]
@@ -78,5 +78,87 @@ public class NumericExtensionsTests
         Assert.IsFalse(21.IsPrime());
         Assert.IsFalse(27.IsPrime());
         Assert.IsFalse(30.IsPrime());
+    }
+
+    [TestMethod]
+    public void TestIsEven()
+    {
+        Assert.IsTrue(2.IsEven());
+        Assert.IsTrue(4.IsEven());
+        Assert.IsTrue(6.IsEven());
+        Assert.IsTrue(8.IsEven());
+        Assert.IsTrue(10.IsEven());
+        
+        // Test Not Evens
+        Assert.IsFalse(1.IsEven());
+        Assert.IsFalse(3.IsEven());
+        Assert.IsFalse(5.IsEven());
+        Assert.IsFalse(7.IsEven());
+        Assert.IsFalse(9.IsEven());
+        
+        // Test Big Numbers Both Evens and Not Evens
+        Assert.IsTrue(100.IsEven());
+        Assert.IsTrue(200.IsEven());
+        Assert.IsTrue(300.IsEven());
+        Assert.IsTrue(400.IsEven());
+        
+        // Test Big Uneven Values
+        Assert.IsFalse(101.IsEven());
+        Assert.IsFalse(201.IsEven());
+        Assert.IsFalse(301.IsEven());
+        Assert.IsFalse(401.IsEven());
+        Assert.IsFalse(501.IsEven());
+    }
+
+    [TestMethod]
+    public void TestIsOdd()
+    {
+        Assert.IsFalse(2.IsOdd());
+        Assert.IsFalse(4.IsOdd());
+        Assert.IsFalse(6.IsOdd());
+        Assert.IsFalse(8.IsOdd());
+        Assert.IsFalse(10.IsOdd());
+        
+        // Test Not Evens
+        Assert.IsTrue(1.IsOdd());
+        Assert.IsTrue(3.IsOdd());
+        Assert.IsTrue(5.IsOdd());
+        Assert.IsTrue(7.IsOdd());
+        Assert.IsTrue(9.IsOdd());
+        
+        // Test Big Numbers Both Evens and Not Evens
+        Assert.IsFalse(100.IsOdd());
+        Assert.IsFalse(200.IsOdd());
+        Assert.IsFalse(300.IsOdd());
+        Assert.IsFalse(400.IsOdd());
+        
+        // Test Big Uneven Values
+        Assert.IsTrue(101.IsOdd());
+        Assert.IsTrue(201.IsOdd());
+        Assert.IsTrue(301.IsOdd());
+        Assert.IsTrue(401.IsOdd());
+        Assert.IsTrue(501.IsOdd());
+    }
+
+    [TestMethod]
+    public void TestAbs()
+    {
+        Assert.AreEqual(7, (-7).Abs());
+        Assert.AreEqual(9, 9.Abs());
+        Assert.AreEqual(101, 101.Abs());
+        Assert.AreEqual(73, (-73).Abs());
+    }
+
+    [TestMethod]
+    public void TestGreatestCommonDivisor()
+    {
+        Assert.AreEqual(5, 15.GreatestCommonDivisor(with: 5));
+        Assert.AreEqual(1, 17.GreatestCommonDivisor(with: 4));
+        Assert.AreEqual(20, 0.GreatestCommonDivisor(with: 20));
+        Assert.AreEqual(34, 34.GreatestCommonDivisor(with: 0));
+        Assert.AreEqual(0, 0.GreatestCommonDivisor(with: 0));
+        Assert.AreEqual(5, (-10).GreatestCommonDivisor(with: 5));
+        Assert.AreEqual(5, (-25).GreatestCommonDivisor(with: -5));
+        Assert.AreEqual(6, 123456.GreatestCommonDivisor(with: 7890));
     }
 }
