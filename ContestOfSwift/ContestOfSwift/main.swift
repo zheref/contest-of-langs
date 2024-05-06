@@ -7,6 +7,10 @@
 
 import Foundation
 
+print("Challenge 0: Seconds Counter")
+let cancellable = Challenge0.performReactively()
+//Thread.sleep(forTimeInterval: 61.0)
+
 print("Challenge 1: Fizz Buzz")
 Challenge1.perform()
 
