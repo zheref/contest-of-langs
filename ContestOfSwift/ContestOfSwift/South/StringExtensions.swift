@@ -9,7 +9,10 @@ import Foundation
 
 public extension String {
 
-    // TO TEST
+    func isAnagram(of string: String) -> Bool {
+        lowercased().sorted() == string.lowercased().sorted()
+    }
+
     var isBalanced: Bool {
         let symbols = ["(": ")", "[": "]", "{": "}", "<": ">"]
         let characters = split(separator: "")

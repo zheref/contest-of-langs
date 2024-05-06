@@ -14,19 +14,7 @@ import Foundation
 
 enum Challenge4 {
 
-    static func isPrime(_ number: Int) -> Bool {
-        guard number >= 2 else {
-            return false
-        }
-
-        for n in (2..<number) {
-            if number % n == 0 {
-                return false
-            }
-        }
-
-        return true
-    }
+    static func isPrime(_ number: Int) -> Bool { number.isPrime }
 
     static func perform() {
         var primeNumbers = [Int]()

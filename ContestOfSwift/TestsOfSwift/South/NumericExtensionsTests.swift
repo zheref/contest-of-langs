@@ -29,4 +29,22 @@ final class NumericExtensionsTests: XCTestCase {
         XCTAssertEqual(50.fibonaccis, expected50)
     }
 
+    func testIsPrime() {
+        XCTAssertTrue(2.isPrime)
+        XCTAssertTrue(3.isPrime)
+        XCTAssertTrue(5.isPrime)
+        XCTAssertTrue(7.isPrime)
+        XCTAssertTrue(23.isPrime)
+        XCTAssertTrue(31.isPrime)
+        XCTAssertTrue(73.isPrime)
+
+        XCTAssertFalse(1.isPrime)
+        XCTAssertFalse(4.isPrime)
+        XCTAssertFalse(9.isPrime)
+        XCTAssertFalse(15.isPrime)
+        XCTAssertFalse(21.isPrime)
+        XCTAssertFalse(27.isPrime)
+        XCTAssertFalse(30.isPrime)
+    }
+
 }

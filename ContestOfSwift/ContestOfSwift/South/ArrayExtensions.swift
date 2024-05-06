@@ -15,6 +15,12 @@ public extension Array where Element: Any {
         newer.append(element)
         return newer
     }
+
+    // TO TEST
+    static func + (left: Array<Element>, right: Element) -> Array<Element> {
+        left.appending(element: right)
+    }
+
 }
 
 public extension Collection where Element: Equatable {

@@ -28,4 +28,17 @@ extension Int {
         return sequence
     }
 
+    // TO TEST
+    var isPrime: Bool {
+        guard self >= 2 else {
+            return false
+        }
+
+        for n in (2..<self) {
+            if self % n == 0 { return false }
+        }
+
+        return true
+    }
+
 }

@@ -49,9 +49,9 @@ enum Challenge1 {
             .reduce([String]()) {
                 when([
                     (($1.isMultiple(of: 3) && $1.isMultiple(of: 5)),
-                     $0.appending(element: multiplesOfThreeAndFiveReplacement)),
-                    ($1.isMultiple(of: 3), $0.appending(element: multiplesOfThreeReplacement)),
-                    ($1.isMultiple(of: 5), $0.appending(element: multiplesOfFiveReplacement))
+                     $0 + multiplesOfThreeAndFiveReplacement),
+                    ($1.isMultiple(of: 3), $0 + multiplesOfThreeReplacement),
+                    ($1.isMultiple(of: 5), $0 + multiplesOfFiveReplacement)
                 ], fallbackingWith: $0.appending(element: "\($1)"))
             }
             .joined(separator: "\n")
