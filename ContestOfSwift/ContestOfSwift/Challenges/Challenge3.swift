@@ -18,22 +18,8 @@ import Foundation
 // Virtual namespacing
 enum Challenge3 {
 
-    private static let limit = 50
-
     static func fibonacci() -> [Int] {
-        var sequence = [0, 1]
-
-        while sequence.count < limit {
-            // Tuple
-            let lastPair = (
-                first: sequence[sequence.count - 1],
-                second: sequence[sequence.count - 2]
-            )
-
-            sequence.append(lastPair.first + lastPair.second)
-        }
-
-        return sequence
+        return 50.fibonaccis ?? []
     }
 
     static func perform() {

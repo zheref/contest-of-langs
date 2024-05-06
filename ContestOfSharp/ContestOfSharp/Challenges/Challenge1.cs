@@ -8,6 +8,7 @@
  */
 
 using static System.Linq.Enumerable;
+using static ContestOfSharp.South.LanguageExtensions;
 using ContestOfSharp.South;
 
 namespace ContestOfSharp.Challenges;
@@ -18,7 +19,7 @@ public abstract class Challenge1
     private const string MultiplesOfFiveReplacement = "buzz";
     private const string MultiplesOfThreeAndFiveReplacement = "fizzbuzz";
 
-    private static string FizzBuzz()
+    private static string FizzBuzzImperative()
     {
         var toPrint = "";
         
@@ -47,8 +48,27 @@ public abstract class Challenge1
         return toPrint;
     }
 
+    private static string FizzBuzzDeclarative()
+        => Range(1, 100)
+            .Aggregate(Array.Empty<string>(), (strings, n) =>
+            {
+                return When(rules: new (bool, string[])[]
+                {
+                    (n.IsMultipleOf(number: 3) && n.IsMultipleOf(number: 5),
+                        strings.Adding(element: MultiplesOfThreeAndFiveReplacement)),
+                    (n.IsMultipleOf(number: 3),
+                        strings.Adding(element: MultiplesOfThreeReplacement)),
+                    (n.IsMultipleOf(number: 5),
+                        strings.Adding(element: MultiplesOfFiveReplacement))
+                }, fallback: strings.Adding(element: n.ToString()));
+            })
+            .Joined(separator: "\n");
+
     internal static void Perform()
     {
-        Console.WriteLine(FizzBuzz());
+        Console.WriteLine("FizzBuzz Imperative ------------------------------------------");
+        Console.WriteLine(FizzBuzzImperative());
+        Console.WriteLine("FizzBuzz Declarative ------------------------------------------");
+        Console.WriteLine(FizzBuzzDeclarative());
     }
 }

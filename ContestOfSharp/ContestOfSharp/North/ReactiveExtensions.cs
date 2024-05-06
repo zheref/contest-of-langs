@@ -1,5 +1,3 @@
-using System.Reactive.Subjects;
-
 namespace ContestOfSharp.North;
 
 using System.Reactive.Concurrency;

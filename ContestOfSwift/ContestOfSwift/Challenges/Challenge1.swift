@@ -22,7 +22,7 @@ enum Challenge1 {
     private static let multiplesOfFiveReplacement = "buzz"
     private static let multiplesOfThreeAndFiveReplacement = "fizzbuzz"
 
-    static func fizzBuzz() -> String {
+    static func fizzBuzzImperative() -> String {
         var toPrint = ""
 
         for n in 1...100 {
@@ -30,11 +30,11 @@ enum Challenge1 {
                 toPrint += "\n"
             }
 
-            if isNumber(n, multipleOf: 3) && isNumber(n, multipleOf: 5) {
+            if n.isMultiple(of: 3) && n.isMultiple(of: 5) {
                 toPrint += multiplesOfThreeAndFiveReplacement
-            } else if isNumber(n, multipleOf: 3) {
+            } else if n.isMultiple(of: 3) {
                 toPrint += multiplesOfThreeReplacement
-            } else if isNumber(n, multipleOf: 5) {
+            } else if n.isMultiple(of: 5) {
                 toPrint += multiplesOfFiveReplacement
             } else {
                 toPrint += "\(n)"
@@ -44,14 +44,26 @@ enum Challenge1 {
         return toPrint
     }
 
-    static func isNumber(_ number: Int, multipleOf m: Int) -> Bool {
-        return number % m == 0
+    static func fizzBuzzDeclarative() -> String {
+        (1...100)
+            .reduce([String]()) {
+                when([
+                    (($1.isMultiple(of: 3) && $1.isMultiple(of: 5)),
+                     $0.appending(element: multiplesOfThreeAndFiveReplacement)),
+                    ($1.isMultiple(of: 3), $0.appending(element: multiplesOfThreeReplacement)),
+                    ($1.isMultiple(of: 5), $0.appending(element: multiplesOfFiveReplacement))
+                ], fallbackingWith: $0.appending(element: "\($1)"))
+            }
+            .joined(separator: "\n")
     }
 
+    static func isNumber(_ number: Int, multipleOf m: Int) -> Bool { number.isMultiple(of: m) }
+
     static func perform() {
-        print(
-            fizzBuzz()
-        )
+        print("Imperative ------------------------------------------------")
+        print(fizzBuzzImperative())
+        print("Declarative ------------------------------------------------")
+        print(fizzBuzzDeclarative())
     }
 
 }
