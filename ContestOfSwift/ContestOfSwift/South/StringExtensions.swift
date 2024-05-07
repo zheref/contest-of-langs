@@ -36,6 +36,16 @@ public extension String {
         return balance.isEmpty
     }
 
+    var inverted: String {
+        if isEmpty { return self }
+        let characters = split(separator: "")
+        var inverted = ""
+        for i in 1...count {
+            inverted += characters[count - i]
+        }
+        return inverted
+    }
+
 }
 
 public extension String.SubSequence {

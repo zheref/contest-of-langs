@@ -47,4 +47,15 @@ final class NumericExtensionsTests: XCTestCase {
         XCTAssertFalse(30.isPrime)
     }
 
+    func testGreatCommonDivisor() {
+        XCTAssertEqual(15.greatestCommonDivisor(with: 5), 5)
+        XCTAssertEqual(17.greatestCommonDivisor(with: 4), 1)
+        XCTAssertEqual(0.greatestCommonDivisor(with: 20), 20)
+        XCTAssertEqual(34.greatestCommonDivisor(with: 0), 34)
+        XCTAssertEqual(0.greatestCommonDivisor(with: 0), 0)
+        XCTAssertEqual((-10).greatestCommonDivisor(with: 5), 5)
+        XCTAssertEqual((-25).greatestCommonDivisor(with: -5), 5)
+        XCTAssertEqual(123456.greatestCommonDivisor(with: 7890), 6)
+    }
+
 }

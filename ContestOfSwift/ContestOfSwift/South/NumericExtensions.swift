@@ -41,6 +41,15 @@ extension Int {
         return true
     }
 
+    func greatestCommonDivisor(with number: Int) -> Int {
+        var numerator = self
+        var divisor = number
+        while divisor != 0 {
+            (numerator, divisor) = (divisor, numerator % divisor)
+        }
+        return abs(numerator)
+    }
+
     var seconds: DispatchQueue.SchedulerTimeType.Stride {
         .seconds(self)
     }
@@ -50,15 +59,3 @@ extension Int {
     }
 
 }
-
-//extension TimeInterval {
-//
-//    var seconds: DispatchTimeInterval {
-//        return .seconds(self)
-//    }
-//
-//    var milliseconds: DispatchTimeInterval {
-//        return .milliseconds(self)
-//    }
-//
-//}

@@ -40,7 +40,7 @@ extension URL {
             .eraseToAnyPublisher()
     }
 
-    func downloaded(using session: URLSessionProtocol = URLSession.shared) async throws -> Data? {
+    func downloaded(using session: URLSessionProtocol = URLSession.shared) async throws -> Data {
         let (data, _) = try await session.downloaded(from: self)
         return data
     }

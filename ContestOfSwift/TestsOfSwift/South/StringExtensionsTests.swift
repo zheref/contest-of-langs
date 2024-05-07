@@ -41,4 +41,17 @@ final class StringExtensionsTests: XCTestCase {
         XCTAssertTrue("<{{{()()}}}>".isBalanced)
     }
 
+    func testInverted() {
+        XCTAssertEqual("Hello".inverted, "olleH")
+        XCTAssertEqual("Hello World".inverted, "dlroW olleH")
+        XCTAssertEqual("T".inverted, "T")
+        XCTAssertEqual("".inverted, "")
+        XCTAssertEqual("Hola mundo".inverted, "odnum aloH")
+        XCTAssertEqual("Exotic".inverted, "citoxE")
+        XCTAssertEqual("Galaxy".inverted, "yxalaG")
+        XCTAssertEqual("Nanoleaf".inverted, "faelonaN")
+        XCTAssertEqual("kayak".inverted, "kayak")
+        XCTAssertEqual("deified".inverted, "deified")
+    }
+
 }

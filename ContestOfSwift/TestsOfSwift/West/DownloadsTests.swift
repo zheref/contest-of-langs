@@ -106,9 +106,9 @@ final class DownloadsTests: XCTestCase {
         do {
             let data = try await Self.fakeResourceUrl1.downloaded(using: fakeSession)
             XCTAssertNotNil(data)
-            XCTAssertTrue(data!.count > 0)
+            XCTAssertTrue(data.count > 0)
             
-            guard let decodedString = String(data: data!, encoding: .utf8) else {
+            guard let decodedString = String(data: data, encoding: .utf8) else {
                 XCTFail("Resolved data is not expected. Was meant to decode back to a String")
                 return
             }

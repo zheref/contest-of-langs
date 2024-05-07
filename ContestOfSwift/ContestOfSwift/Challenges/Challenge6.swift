@@ -21,7 +21,7 @@ enum CustomError6: Error {
 }
 
 func downloadImage(fromURL url: URL) async throws -> NSImage? {
-    let (data, _) = try await URLSession.shared.data(from: url)
+    let data = try await url.downloaded()
     return NSImage(data: data)
 }
 
@@ -33,10 +33,5 @@ func calculateAspectRatio(fromURL url: URL) async throws -> (w: Int, h: Int)? {
 }
 
 func greatestCommonDivisor(from numerator: Int, and divisor: Int) -> Int {
-    var numerator = numerator
-    var divisor = divisor
-    while divisor != 0 {
-        (numerator, divisor) = (divisor, numerator % divisor)
-    }
-    return abs(numerator)
+    numerator.greatestCommonDivisor(with: divisor)
 }

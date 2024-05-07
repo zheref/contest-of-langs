@@ -15,14 +15,6 @@ import Foundation
 
 enum Challenge7 {
     
-    static func invert(string: String) -> String {
-        if string.isEmpty { return string }
-        let characters = string.split(separator: "")
-        var inverted = ""
-        for i in 1...string.count {
-            inverted += characters[string.count - i]
-        }
-        return inverted
-    }
+    static func invert(string: String) -> String { string.inverted }
 
 }
