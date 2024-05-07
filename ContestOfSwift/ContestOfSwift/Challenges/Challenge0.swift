@@ -11,10 +11,17 @@ import Combine
 enum Challenge0 {
 
     static func performReactively() -> AnyCancellable {
-        60.secondsCounter(on: RunLoop.main)
+        return 60.secondsCounter(on: .main)
             .sink { second in
                 print("Reactive Timer Ticked: \(second)")
             }
+    }
+
+    @MainActor
+    static func performConcurrently() async {
+        for await second in 60.secondsCount() {
+            print("Concurrent Timer Ticked: \(second)")
+        }
     }
 
 }

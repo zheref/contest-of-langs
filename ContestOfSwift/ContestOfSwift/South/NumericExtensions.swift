@@ -41,4 +41,24 @@ extension Int {
         return true
     }
 
+    var seconds: DispatchQueue.SchedulerTimeType.Stride {
+        .seconds(self)
+    }
+
+    var milliseconds: DispatchQueue.SchedulerTimeType.Stride {
+        .milliseconds(self)
+    }
+
 }
+
+//extension TimeInterval {
+//
+//    var seconds: DispatchTimeInterval {
+//        return .seconds(self)
+//    }
+//
+//    var milliseconds: DispatchTimeInterval {
+//        return .milliseconds(self)
+//    }
+//
+//}

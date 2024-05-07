@@ -9,7 +9,8 @@ import Foundation
 
 print("Challenge 0: Seconds Counter")
 let cancellable = Challenge0.performReactively()
-//Thread.sleep(forTimeInterval: 61.0)
+Task { await Challenge0.performConcurrently() }
+RunLoop.main.run(until: .now + 61)
 
 print("Challenge 1: Fizz Buzz")
 Challenge1.perform()
