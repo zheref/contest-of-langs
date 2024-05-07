@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B05D6F92BEA9430003B6EC0 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05D6F82BEA9430003B6EC0 /* REST.swift */; };
 		2B115EA22BE90DA60000C4D7 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B115EA12BE90DA60000C4D7 /* Downloads.swift */; };
 		2B115EA52BE90FEE0000C4D7 /* DownloadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B115EA42BE90FEE0000C4D7 /* DownloadsTests.swift */; };
 		2B115EA62BE9106F0000C4D7 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B115EA12BE90DA60000C4D7 /* Downloads.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B05D6F82BEA9430003B6EC0 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 		2B115EA12BE90DA60000C4D7 /* Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
 		2B115EA42BE90FEE0000C4D7 /* DownloadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsTests.swift; sourceTree = "<group>"; };
 		2B115EA72BE9377B0000C4D7 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		2B115EA02BE90D750000C4D7 /* West */ = {
 			isa = PBXGroup;
 			children = (
+				2B05D6F82BEA9430003B6EC0 /* REST.swift */,
 				2B115EA12BE90DA60000C4D7 /* Downloads.swift */,
 				2B115EA72BE9377B0000C4D7 /* FileSystem.swift */,
 			);
@@ -390,6 +393,7 @@
 				2BFF63D42BE039D500035959 /* Challenge7.swift in Sources */,
 				2BFF63D92BE03DE600035959 /* Challenge8.swift in Sources */,
 				2BFF63F22BE8757500035959 /* ArrayExtensions.swift in Sources */,
+				2B05D6F92BEA9430003B6EC0 /* REST.swift in Sources */,
 				2BFF63EF2BE872D000035959 /* LanguageExtensions.swift in Sources */,
 				2BFF63E92BE85CD800035959 /* NumericExtensions.swift in Sources */,
 				2B115EB02BE95D220000C4D7 /* Challenge0.swift in Sources */,
