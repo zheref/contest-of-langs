@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using ContestOfSharp.Challenges;
-using ContestOfSharp.South;
 
 Console.WriteLine("Challenge 0: Seconds Counter");
 Challenge0.CountSeconds_Reactively();

@@ -1,5 +1,5 @@
 namespace TestOfSharp.South;
-using ContestOfSharp.South;
+using BankaiSouth;
 
 [TestClass]
 public class StringExtensionsTests

@@ -8,8 +8,8 @@
  */
 
 using static System.Linq.Enumerable;
-using static ContestOfSharp.South.LanguageExtensions;
-using ContestOfSharp.South;
+using static BankaiSouth.LanguageExtensions;
+using BankaiSouth;
 
 namespace ContestOfSharp.Challenges;
 

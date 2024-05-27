@@ -4,6 +4,60 @@
     "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/TestOfSharp.csproj": {}
   },
   "projects": {
+    "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/BankaiSouth.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/BankaiSouth.csproj",
+        "projectName": "BankaiSouth",
+        "projectPath": "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/BankaiSouth.csproj",
+        "packagesPath": "/Users/zheref/.nuget/packages/",
+        "outputPath": "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/zheref/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/Users/zheref/.dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/zheref/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/ContestOfSharp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +80,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/BankaiSouth.csproj": {
+                "projectPath": "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/BankaiSouth.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

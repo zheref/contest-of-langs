@@ -1,4 +1,4 @@
-using ContestOfSharp.South;
+using BankaiSouth;
 
 namespace ContestOfSharp.Challenges;
 

@@ -1,6 +1,6 @@
 namespace ContestOfSharp.North;
 using static System.Linq.Enumerable;
-using ContestOfSharp.South;
+using BankaiSouth;
 
 public static class ConcurrencyExtensions
 {

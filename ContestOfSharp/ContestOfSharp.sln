@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContestOfSharp", "ContestOf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOfSharp", "TestOfSharp\TestOfSharp.csproj", "{FF754615-B8BA-4A14-A528-08C04E9672B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankaiSouth", "BankaiSouth\BankaiSouth.csproj", "{95108E24-6D72-475C-BE71-7F072437826F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{FF754615-B8BA-4A14-A528-08C04E9672B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF754615-B8BA-4A14-A528-08C04E9672B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF754615-B8BA-4A14-A528-08C04E9672B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95108E24-6D72-475C-BE71-7F072437826F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95108E24-6D72-475C-BE71-7F072437826F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95108E24-6D72-475C-BE71-7F072437826F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95108E24-6D72-475C-BE71-7F072437826F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

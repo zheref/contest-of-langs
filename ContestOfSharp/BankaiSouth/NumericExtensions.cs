@@ -1,7 +1,6 @@
 using System.Runtime.InteropServices.ObjectiveC;
-using SkiaSharp;
 
-namespace ContestOfSharp.South;
+namespace BankaiSouth;
 
 // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
 

@@ -5,7 +5,7 @@ using Microsoft.Reactive.Testing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using ContestOfSharp.North;
-using ContestOfSharp.South;
+using BankaiSouth;
 
 [TestClass]
 public class ReactiveExtensionsTests

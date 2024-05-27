@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace ContestOfSharp.South;
+namespace BankaiSouth;
 
 public static partial class StringExtensions
 {

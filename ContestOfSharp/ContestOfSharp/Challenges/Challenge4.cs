@@ -3,7 +3,7 @@
  * Hecho esto, imprime los números primos entre 1 y 100.
  */
 
-using ContestOfSharp.South;
+using BankaiSouth;
 
 namespace ContestOfSharp.Challenges;
 

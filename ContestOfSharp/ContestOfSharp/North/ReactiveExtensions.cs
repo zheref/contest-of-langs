@@ -3,7 +3,7 @@ namespace ContestOfSharp.North;
 using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 
-using ContestOfSharp.South;
+using BankaiSouth;
 
 public static class ReactiveExtensions
 {

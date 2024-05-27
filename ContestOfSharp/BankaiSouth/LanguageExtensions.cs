@@ -1,4 +1,4 @@
-namespace ContestOfSharp.South;
+namespace BankaiSouth;
 
 public static class LanguageExtensions
 {

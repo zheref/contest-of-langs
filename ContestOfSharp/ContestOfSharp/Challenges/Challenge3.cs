@@ -6,7 +6,7 @@
  *   0, 1, 1, 2, 3, 5, 8, 13...
  */
 
-using ContestOfSharp.South;
+using BankaiSouth;
 namespace ContestOfSharp.Challenges;
 
 public abstract class Challenge3

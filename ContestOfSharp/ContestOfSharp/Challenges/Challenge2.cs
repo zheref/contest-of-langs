@@ -7,7 +7,7 @@
  * - Dos palabras exactamente iguales no son anagrama.
  */
 
-using ContestOfSharp.South;
+using BankaiSouth;
 
 namespace ContestOfSharp.Challenges;
  

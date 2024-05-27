@@ -1,6 +1,6 @@
 namespace TestOfSharp.Challenges;
 // using static ContestOfSharp.Challenges.Challenge1;
-using ContestOfSharp.South;
+using BankaiSouth;
 
 [TestClass]
 public class Challenge1Tests

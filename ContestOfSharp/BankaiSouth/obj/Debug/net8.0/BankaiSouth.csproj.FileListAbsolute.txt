@@ -1,0 +1,12 @@
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/bin/Debug/net8.0/BankaiSouth.deps.json
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/bin/Debug/net8.0/BankaiSouth.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/bin/Debug/net8.0/BankaiSouth.pdb
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.AssemblyInfoInputs.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.AssemblyInfo.cs
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.csproj.CoreCompileInputs.cache
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.sourcelink.json
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/refint/BankaiSouth.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/BankaiSouth.pdb
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/BankaiSouth/obj/Debug/net8.0/ref/BankaiSouth.dll
