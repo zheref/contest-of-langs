@@ -15,6 +15,26 @@ public static partial class StringExtensions
     public static bool IsEmpty(this string self) => self.Trim().Length == 0;
 
     /// <summary>
+    /// Counts the number of occurrences of a given word in the input string, ignoring case and special characters.
+    /// </summary>
+    /// <param name="self">The input string to search.</param>
+    /// <param name="word">The word to count the occurrences of.</param>
+    /// <returns>The number of occurrences of the given word in the input string.</returns>
+    public static int CountInstancesOf(this string self, string word)
+    {
+        if (self.IsEmpty()) return 0;
+        
+        return self
+            .SpecialCharactersFree()
+            .Split(' ')
+            .Select(x => x.ToLower())
+            .Count(x => x.Equals(
+                word.ToLower()
+                    .SpecialCharactersFree()
+            ));
+    }
+
+    /// <summary>
     /// Inverts the order of characters in the given string.
     /// </summary>
     /// <param name="self">The input string to be inverted.</param>
