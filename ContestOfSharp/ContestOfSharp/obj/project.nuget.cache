@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "++8IrvTVvqf0wduvKPMcuSa/w2E0Xnjdnkrw6JRT9bgaOjE6KwOmDT5ZVziMM2IweI3QcdKwgKqL+Bjp/F3j9w==",
+  "dgSpecHash": "TVR+0sw+4hKnuwcc1Rj3ixAOoVuuWlKdgQDf2zEYx67+4G4hEXzXO1pj3nk7n368cKRTC8v5TgfL08unbEJDAg==",
   "success": true,
   "projectFilePath": "/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/ContestOfSharp/ContestOfSharp.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "/Users/zheref/.nuget/packages/skiasharp/2.88.6/skiasharp.2.88.6.nupkg.sha512",
     "/Users/zheref/.nuget/packages/skiasharp.nativeassets.macos/2.88.6/skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
     "/Users/zheref/.nuget/packages/skiasharp.nativeassets.win32/2.88.6/skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
-    "/Users/zheref/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/zheref/.nuget/packages/system.reactive/6.0.1-preview.1/system.reactive.6.0.1-preview.1.nupkg.sha512"
   ],
   "logs": []

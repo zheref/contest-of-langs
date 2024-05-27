@@ -96,7 +96,6 @@
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.AssemblyInfoInputs.cache
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.AssemblyInfo.cs
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.csproj.CoreCompileInputs.cache
-/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.csproj.CopyComplete
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.dll
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/refint/TestOfSharp.dll
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.pdb
@@ -111,3 +110,5 @@
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/runtimes/win-x86/native/libSkiaSharp.dll
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/Microsoft.Reactive.Testing.dll
 /Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/bin/Debug/net7.0/System.Reactive.dll
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSharp.sourcelink.json
+/Users/zheref/Xpaces/contest-of-langs/ContestOfSharp/TestOfSharp/obj/Debug/net7.0/TestOfSh.E4A5283E.Up2Date
