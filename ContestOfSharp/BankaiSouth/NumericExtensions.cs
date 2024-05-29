@@ -63,4 +63,37 @@ public static class NumericExtensions
     }
 
     public static TimeSpan Seconds(this int self) => TimeSpan.FromSeconds(self);
+
+    public static string ToSystemBase(this int self, Int16 systemBase)
+    {
+        if (systemBase <= 1) 
+            throw new ArgumentException("Unable to transform integer to base system lower than 2.");
+        if (self == 0)
+            return "0";
+        
+        var result = "";
+        var number = self.Abs();
+        while (number != 0)
+        {
+            var remainder = number % systemBase;
+            number /= systemBase;
+            string newDigit = remainder < 10 ? remainder.ToString() 
+                : remainder.DigitRepresentation().ToString();
+            result = newDigit + result;
+        }
+        
+        // Handle potential negatives
+        if (self < 0)
+            result = $"-{result}";
+
+        return result;
+    }
+
+    public static char DigitRepresentation(this int self)
+    {
+        if (self is < 10 or > 35)
+            throw new ArgumentException("Invalid digit representation.");
+
+        return (char)(self + 55);
+    }
 }

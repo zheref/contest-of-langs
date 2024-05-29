@@ -161,4 +161,44 @@ public class NumericExtensionsTests
         Assert.AreEqual(5, (-25).GreatestCommonDivisor(with: -5));
         Assert.AreEqual(6, 123456.GreatestCommonDivisor(with: 7890));
     }
+
+    [TestMethod]
+    public void TestToSystemBase()
+    {
+        Assert.AreEqual("1010", 10.ToSystemBase(2));
+        Assert.AreEqual("0", 0.ToSystemBase(2));
+        Assert.AreEqual("10000", 16.ToSystemBase(2));
+        Assert.AreEqual("10010", 18.ToSystemBase(2));
+        Assert.AreEqual("10001", 17.ToSystemBase(2));
+        Assert.AreEqual("-1010", (-10).ToSystemBase(2));
+        Assert.AreEqual("12", 10.ToSystemBase(8));
+        Assert.AreEqual("0", 0.ToSystemBase(8));
+        Assert.AreEqual("7", 7.ToSystemBase(8));
+        Assert.AreEqual("144", 100.ToSystemBase(8));
+        Assert.AreEqual("100", 64.ToSystemBase(8));
+        Assert.AreEqual("-10", (-8).ToSystemBase(8));
+        Assert.AreEqual("FF", 255.ToSystemBase(16));
+        Assert.AreEqual("0", 0.ToSystemBase(16));
+        Assert.AreEqual("AF", 175.ToSystemBase(16));
+        Assert.AreEqual("3FF", 1023.ToSystemBase(16));
+        Assert.AreEqual("100", 256.ToSystemBase(16));
+        Assert.AreEqual("-FF", (-255).ToSystemBase(16));
+        Assert.AreEqual("101", 10.ToSystemBase(3));
+        Assert.AreEqual("0", 0.ToSystemBase(5));
+        Assert.AreEqual("-1010", (-10).ToSystemBase(2));
+        Assert.ThrowsException<ArgumentException>(() => 1.ToSystemBase(1));
+        Assert.AreEqual("10000000000", 1024.ToSystemBase(2));
+    }
+
+    [TestMethod]
+    public void TestDigitRepresentation()
+    {
+        Assert.AreEqual('A', 10.DigitRepresentation());
+        Assert.AreEqual('B', 11.DigitRepresentation());
+        Assert.AreEqual('C', 12.DigitRepresentation());
+        Assert.AreEqual('D', 13.DigitRepresentation());
+        Assert.AreEqual('E', 14.DigitRepresentation());
+        Assert.AreEqual('F', 15.DigitRepresentation());
+    }
+    
 }
