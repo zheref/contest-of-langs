@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankaiSouth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c328e90e8c894d4498dc9bb5f36f907b69593c05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+376527ff4c7bf2eea543b45932038fcb2382b32b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankaiSouth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankaiSouth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
