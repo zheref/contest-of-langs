@@ -47,4 +47,25 @@ public class StringExtensionsTests
         Assert.AreEqual(expected: "kayak", actual: "kayak".Inverted());
         Assert.AreEqual(expected: "deified", actual: "deified".Inverted());
     }
+
+    [TestMethod]
+    public void Test_IsBalanced()
+    {
+        Assert.IsFalse("{a + b [c] * (2x2)}}}}".IsBalanced());
+        Assert.IsTrue("{ [ a * ( c + d ) ] - 5 }".IsBalanced());
+        Assert.IsFalse("{ a * ( c + d ) ] - 5 }".IsBalanced());
+        Assert.IsFalse("{a^4 + (((ax4)}".IsBalanced());
+        Assert.IsFalse("{ ] a * ( c + d ) + ( 2 - 3 )[ - 5 }".IsBalanced());
+        Assert.IsFalse("{{{{{{(}}}}}}".IsBalanced());
+        Assert.IsFalse("(a".IsBalanced());
+        Assert.IsTrue("".IsBalanced());
+        Assert.IsTrue("<{{{()()}}}>".IsBalanced());
+        Assert.IsTrue("()".IsBalanced());
+        Assert.IsTrue("[]".IsBalanced());
+        Assert.IsTrue("{}".IsBalanced());
+        Assert.IsTrue("()[]{}".IsBalanced());
+        Assert.IsTrue("([]{})".IsBalanced());
+        Assert.IsFalse("(".IsBalanced());
+        Assert.IsFalse("[".IsBalanced());
+    }
 }

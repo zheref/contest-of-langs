@@ -67,4 +67,64 @@ public static partial class StringExtensions
     // Common Regular Expressions
     [GeneratedRegex(@"[^a-zA-Z0-9\s]")] private static partial Regex SpecialCharactersFreeRegex();
     [GeneratedRegex("[0-9]")] private static partial Regex NumbersRegex();
+    
+    
+    /*
+     * var isBalanced: Bool {
+           let symbols = ["(": ")", "[": "]", "{": "}", "<": ">"]
+           let characters = split(separator: "")
+           var balance = [String]()
+
+           for character in characters {
+               let (isOpening, isClosing) = (
+                   isOpening: symbols.keys.has(element: character.asString),
+                   isClosing: symbols.values.has(element: character.asString)
+               )
+
+               if isOpening || isClosing {
+                   if isOpening {
+                       balance.append(character.asString)
+                   } else if balance.isEmpty || character != symbols[balance.removeLast()]! {
+                       return false
+                   }
+               } else { continue }
+           }
+
+           return balance.isEmpty
+       }
+     */
+    
+    /// <summary>
+    /// Determines whether the input string has balanced parentheses, brackets, braces, and angle brackets.
+    /// </summary>
+    /// <param name="self">The input string to be checked for balanced symbols.</param>
+    /// <returns>True if the input string has balanced symbols, false otherwise.</returns>
+    public static bool IsBalanced(this string self)
+    {
+        var symbols = new Dictionary<char, char>
+        {
+            ['('] = ')', 
+            ['['] = ']', 
+            ['{'] = '}', 
+            ['<'] = '>'
+        };
+        
+        var balance = new Stack<char>();
+
+        foreach (var character in self)
+        {
+            var isOpening = symbols.ContainsKey(character);
+            var isClosing = symbols.ContainsValue(character);
+
+            if (isOpening || isClosing)
+            {
+                if (isOpening)
+                    balance.Push(character);
+                else if (balance.Count == 0 || character != symbols[balance.Pop()])
+                    return false;
+            }
+        }
+
+        return balance.Count == 0;
+    }
 }
