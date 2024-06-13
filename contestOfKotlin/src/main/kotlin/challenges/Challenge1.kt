@@ -12,6 +12,7 @@ package org.example.challenges.challenge1
 private const val MULTIPLES_OF_THREE_REPLACEMENT = "fizz"
 private const val MULTIPLES_OF_FIVE_REPLACEMENT = "buzz"
 private const val MULTIPLES_OF_THREE_AND_FIVE_REPLACEMENT = "fizzbuzz"
+
 fun fizzBuzz(): String {
     var toPrint = ""
 
@@ -30,6 +31,7 @@ fun fizzBuzz(): String {
 
     return toPrint
 }
+
 fun isNumber(number: Int, multipleOf: Int): Boolean {
     return number % multipleOf == 0
 }
