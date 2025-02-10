@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "2BBC38DF-D2FF-4ABA-B103-DA869EDA0C8C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ContestOfSwift.xcodeproj",
+      "identifier" : "2BFF63962BD863BC00035959",
+      "name" : "ContestOfSwift"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ContestOfSwift.xcodeproj",
+        "identifier" : "2BFF63A42BD863E100035959",
+        "name" : "TestsOfSwift"
+      }
+    }
+  ],
+  "version" : 1
+}
