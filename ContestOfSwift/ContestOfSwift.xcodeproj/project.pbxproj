@@ -32,6 +32,9 @@
 		2B65B6482D597EFE000DDF54 /* Challenge20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B6472D597EFB000DDF54 /* Challenge20.swift */; };
 		2B65B6492D597EFE000DDF54 /* Challenge20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B6472D597EFB000DDF54 /* Challenge20.swift */; };
 		2B65B64B2D597F17000DDF54 /* Challenge20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B64A2D597F17000DDF54 /* Challenge20Tests.swift */; };
+		2B65B64D2D59824D000DDF54 /* Challenge21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B64C2D59824A000DDF54 /* Challenge21.swift */; };
+		2B65B64E2D59824D000DDF54 /* Challenge21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B64C2D59824A000DDF54 /* Challenge21.swift */; };
+		2B65B6502D5986C0000DDF54 /* Challenge21Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B64F2D5986C0000DDF54 /* Challenge21Tests.swift */; };
 		2BB0637E2D5313040026ECF7 /* Challenge11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0637D2D5313000026ECF7 /* Challenge11.swift */; };
 		2BB0637F2D5313040026ECF7 /* Challenge11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0637D2D5313000026ECF7 /* Challenge11.swift */; };
 		2BB063812D5313C80026ECF7 /* Challenge11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB063802D5313C80026ECF7 /* Challenge11Tests.swift */; };
@@ -137,6 +140,8 @@
 		2B65B6452D594A57000DDF54 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		2B65B6472D597EFB000DDF54 /* Challenge20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge20.swift; sourceTree = "<group>"; };
 		2B65B64A2D597F17000DDF54 /* Challenge20Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge20Tests.swift; sourceTree = "<group>"; };
+		2B65B64C2D59824A000DDF54 /* Challenge21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge21.swift; sourceTree = "<group>"; };
+		2B65B64F2D5986C0000DDF54 /* Challenge21Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge21Tests.swift; sourceTree = "<group>"; };
 		2BB0637D2D5313000026ECF7 /* Challenge11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge11.swift; sourceTree = "<group>"; };
 		2BB063802D5313C80026ECF7 /* Challenge11Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge11Tests.swift; sourceTree = "<group>"; };
 		2BB063822D5317C60026ECF7 /* Challenge12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge12.swift; sourceTree = "<group>"; };
@@ -305,6 +310,7 @@
 				2B198ED22D555DD4007713E7 /* Challenge18.swift */,
 				2B65B6402D594738000DDF54 /* Challenge19.swift */,
 				2B65B6472D597EFB000DDF54 /* Challenge20.swift */,
+				2B65B64C2D59824A000DDF54 /* Challenge21.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 				2B198ED52D555DEA007713E7 /* Challenge18Tests.swift */,
 				2B65B6432D5948B1000DDF54 /* Challenge19Tests.swift */,
 				2B65B64A2D597F17000DDF54 /* Challenge20Tests.swift */,
+				2B65B64F2D5986C0000DDF54 /* Challenge21Tests.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -473,6 +480,7 @@
 				2BFF63C72BDC833900035959 /* Challenge5.swift in Sources */,
 				2BB0637E2D5313040026ECF7 /* Challenge11.swift in Sources */,
 				2BB063892D531ED80026ECF7 /* Challenge13.swift in Sources */,
+				2B65B64D2D59824D000DDF54 /* Challenge21.swift in Sources */,
 				2B65B6412D59473B000DDF54 /* Challenge19.swift in Sources */,
 				2B115EB22BE9CFB00000C4D7 /* ConcurrencyExtensions.swift in Sources */,
 				2BFF63D42BE039D500035959 /* Challenge7.swift in Sources */,
@@ -503,6 +511,7 @@
 				2B65B64B2D597F17000DDF54 /* Challenge20Tests.swift in Sources */,
 				2B65B6462D594A57000DDF54 /* ArrayExtensionsTests.swift in Sources */,
 				2BFF63C42BD9FAFB00035959 /* Challenge4Tests.swift in Sources */,
+				2B65B6502D5986C0000DDF54 /* Challenge21Tests.swift in Sources */,
 				2B198ED62D555DEA007713E7 /* Challenge18Tests.swift in Sources */,
 				2B198ED32D555DD7007713E7 /* Challenge18.swift in Sources */,
 				2B198ED12D554698007713E7 /* Challenge17Tests.swift in Sources */,
@@ -522,6 +531,7 @@
 				2BFF63EA2BE85CDB00035959 /* NumericExtensions.swift in Sources */,
 				2BFF63C02BD958B600035959 /* Challenge3.swift in Sources */,
 				2BFF63CF2BDF188B00035959 /* Challenge6.swift in Sources */,
+				2B65B64E2D59824D000DDF54 /* Challenge21.swift in Sources */,
 				2B65B6422D59473B000DDF54 /* Challenge19.swift in Sources */,
 				2B65B6492D597EFE000DDF54 /* Challenge20.swift in Sources */,
 				2BB0637F2D5313040026ECF7 /* Challenge11.swift in Sources */,
